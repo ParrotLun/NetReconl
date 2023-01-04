@@ -1,0 +1,20 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<form>
+    <div>
+        <label for="ip">IP Address:</label>
+        <input type="text" id="ip" />
+    </div>
+    <div>
+        <label for="arg">Nmap Argument:</label>
+        <select id="arg">
+            <option value="-sT">TCP Connect Scan</option>
+            <option value="-sS">SYN Scan</option>
+            <option value="-sU">UDP Scan</option>
+        </select>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
